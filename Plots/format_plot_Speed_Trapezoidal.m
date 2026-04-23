@@ -21,8 +21,8 @@ figure('Color','w');
 set(gcf, 'Units','centimeters', 'Position',[5 5 15 10]);
 
 % ===== Plot =====
-plot(t, y2, '--r', 'LineWidth', 3); hold on;
-plot(t, y1, 'b', 'LineWidth', 2);
+plot(t, y1, '--r', 'LineWidth', 3); hold on;
+plot(t, y2, 'b', 'LineWidth', 2);
 grid on
 grid minor   % có thêm lưới phụ giống Scope
 
@@ -34,7 +34,7 @@ legend({'speed ref', 'Rotor actual speed'}, ...
     'FontSize',16)
 
 % ===== Title chung =====
-sgtitle('Đáp ứng vận tốc với phương pháp điều khiển FOC', ...
+sgtitle('Đáp ứng vận tốc với phương pháp điều khiển FOC, có tải', ...
     'FontWeight','bold','FontSize',14);
 
 set(gca, 'FontSize',11, 'LineWidth',1);

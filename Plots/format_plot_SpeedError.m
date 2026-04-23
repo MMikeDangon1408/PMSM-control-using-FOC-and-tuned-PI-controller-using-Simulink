@@ -16,7 +16,7 @@ set(gcf, 'Units','centimeters', 'Position',[5 5 15 10]);
 plot(t, y, 'b', 'LineWidth', 1.5);
 grid on
 grid minor   % có thêm lưới phụ giống Scope
- 
+
 xlabel('Time (s)', 'FontSize',12)
 ylabel('RPM', 'FontSize',12)
 
@@ -25,7 +25,7 @@ legend({'speed error'}, ...
     'FontSize',16)
 
 % ===== Title chung =====
-sgtitle('Sai số vận tốc khi feed-foward gain bằng 100%', ...
+sgtitle('Sai số vận tốc khi feed-foward gain bằng 100%, có tải', ...
     'FontWeight','bold','FontSize',14);
 
 set(gca, 'FontSize',11, 'LineWidth',1);

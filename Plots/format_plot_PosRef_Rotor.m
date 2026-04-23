@@ -21,20 +21,20 @@ figure('Color','w');
 set(gcf, 'Units','centimeters', 'Position',[5 5 15 10]);
 
 % ===== Plot =====
-plot(t, y2, '--r', 'LineWidth', 3); hold on;
-plot(t, y1, 'b', 'LineWidth', 2);
+plot(t, y1, '--r', 'LineWidth', 3); hold on;
+plot(t, y2, 'b', 'LineWidth', 2);
 grid on
 grid minor   % có thêm lưới phụ giống Scope
 
 xlabel('Time (s)', 'FontSize',12)
 ylabel('rad', 'FontSize',12)
 
-legend({'speed ref', 'Rotor actual speed'}, ...
+legend({'position ref', 'Rotor actual angle'}, ...
     'Location','best', ...
     'FontSize',16)
 
 % ===== Title chung =====
-sgtitle('Vị trí rotor khi feed-foward gain bằng 100%', ...
+sgtitle('Vị trí rotor khi feed-foward gain bằng 100%, có tải', ...
     'FontWeight','bold','FontSize',14);
 
 set(gca, 'FontSize',11, 'LineWidth',1);
