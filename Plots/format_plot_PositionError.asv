@@ -1,0 +1,31 @@
+% ===== Lấy dữ liệu từ Scope =====
+t = ScopePos_error.time;
+y = ScopePos_error.signals.values; %Dimension = 1, nên chỉ cần lấy 1 gtri y
+
+
+% ===== LaTeX mặc định =====
+set(groot,'defaultTextInterpreter','latex');
+set(groot,'defaultLegendInterpreter','latex');
+set(groot,'defaultAxesTickLabelInterpreter','latex');
+
+% ===== Figure =====
+figure('Color','w');
+set(gcf, 'Units','centimeters', 'Position',[5 5 15 10]);
+
+% ===== Plot =====
+plot(t, y, 'b', 'LineWidth', 2);
+grid on
+grid minor   % có thêm lưới phụ giống Scope
+ 
+xlabel('Time (s)', 'FontSize',12)
+ylabel('rà', 'FontSize',12)
+
+legend({'speed error'}, ...
+    'Location','best', ...
+    'FontSize',16)
+
+% ===== Title chung =====
+sgtitle('Đồ thị sai số vị trí', ...
+    'FontWeight','bold','FontSize',14);
+
+set(gca, 'FontSize',11, 'LineWidth',1);
