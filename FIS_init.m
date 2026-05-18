@@ -1,0 +1,1 @@
+myFIS = readfis('AFPI_Controller_E.fis');
