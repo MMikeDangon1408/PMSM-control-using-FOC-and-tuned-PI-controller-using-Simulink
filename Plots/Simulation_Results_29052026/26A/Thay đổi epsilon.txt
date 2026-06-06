@@ -1,0 +1,3 @@
+Do khi thay đổi epsilon bằng 0.05 thì nhiễu được cải thiện. (Xem phần cải thiện epsilon trong notion ngày 29/05/2026).
+
+==> Các đáp ứng sau này làm việc ở điều kiện epsilon = 0.05
